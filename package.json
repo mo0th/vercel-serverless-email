@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Soorria Saruva <soorria.ss@gmail.com> (http://mooth.tech)",
   "license": "MIT",
+  "scripts": {
+    "dev": "vercel dev"
+  },
   "devDependencies": {
     "@vercel/node": "^1.8.5"
   },
