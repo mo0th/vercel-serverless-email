@@ -36,8 +36,11 @@ export default async (req: NowRequest, res: NowResponse) => {
 
   try {
     await sgMail.send(msg)
+    console.log('Sent email', { msg })
     res.status(201).json({ success: true })
   } catch (err) {
+    const { errors } = err.response.body
+    console.error({ errors })
     res.status(500).json({ success: false, errors: err.response.body.errors })
   }
 }
