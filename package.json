@@ -1,0 +1,13 @@
+{
+  "name": "vercel-mail",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Soorria Saruva <soorria.ss@gmail.com> (http://mooth.tech)",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/node": "^1.8.5"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0"
+  }
+}
